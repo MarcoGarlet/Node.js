@@ -21,8 +21,6 @@ Please consider that software design patterns can only be used in OOP languages.
 
 # Creational Design Patterns 
 
-Vediamo:
-
 * Singleton 
 * Factory
 * Builder
