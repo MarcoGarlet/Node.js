@@ -1,12 +1,16 @@
-const CarFactory = require('./car_factory');
+const BMWCarFactory = require('./BMW_car_factory');
+const AudiCarFactory = require('./Audi_car_factory');
 
-const Audi = CarFactory.create('Audi');
-const BMW = CarFactory.create('BMW');
 
-Audi.showInfo();
-BMW.showInfo();
+audyFactory = new AudiCarFactory();
+BMWFactory = new BMWCarFactory();
 
-const dada = CarFactory.create('dada');
+my_audi = audyFactory.orderCar();
+my_bmw = BMWFactory.orderCar();
+
+my_audi.showInfo();
+my_bmw.showInfo();
+
 
 
 

@@ -44,8 +44,8 @@ Please consider that software design patterns can only be used in OOP languages.
 * We can determine the type of the object at runtime, by the time of generating that class object.
 * See here an [example](code/creational/factory)
 * Why don’t we create the objects using new keyword? Because we want to separate the part of code that is most likely to change from the others.
-* In the future, if we need to modify the process of creating objects, we only need to change code inside the create() method of SimpleFactory class. So this client is not affected by these modifications.
-* CONST: In case we want to add a new Car subclass, or delete an existing one, we have to change code in the factory’s create() method.
+* We separate the concrete factories (Audi, BMW) from the abstract factory to adhere the Open-Closed Principle.
+* If we wrote abstract factory concrete, we would have an *orderCar* method with an internal switch case and every time we add a new Car Class the Factory class would be open for modification. 
 
 
 # Structural Design Patterns
