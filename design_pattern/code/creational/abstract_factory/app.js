@@ -8,8 +8,13 @@ const EvilCharacterFactory = require('./EvilCharacterFactory');
 const goodFactory = new GoodCharacterFactory();
 const evilFactory = new EvilCharacterFactory();
 
-const goodWarrior = goodFactory.createWarrior('Arthur');
-console.log(goodWarrior); // Character { name: 'Arthur', type: 'Warrior', faction: 'Good' }
+const goodWarrior = goodFactory.createWarrior('Aragorn');
+const goodMage = goodFactory.createMage('Gandalf');
 
+console.log(goodWarrior); 
+console.log(goodMage);
+
+const evilWarrior = evilFactory.createWarrior('Mauhur');
 const evilMage = evilFactory.createMage('Saruman');
-console.log(evilMage); // Character { name: 'Saruman', type: 'Mage', faction: 'Evil' }
+console.log(evilWarrior);
+console.log(evilMage);
