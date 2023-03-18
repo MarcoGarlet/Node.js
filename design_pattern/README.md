@@ -23,6 +23,8 @@ Please consider that software design patterns can only be used in OOP languages.
 
 * Singleton 
 * Factory
+* Abstract Factory
+* Static Factory
 * Builder
 * Prototype
 
@@ -47,6 +49,11 @@ Please consider that software design patterns can only be used in OOP languages.
 * We separate the concrete factories (Audi, BMW) from the abstract factory to adhere the Open-Closed Principle.
 * If we wrote abstract factory concrete, we would have an *orderCar* method with an internal switch case and every time we add a new Car Class the Factory class would be open for modification. 
 
+## Abstract Factory
+
+* We create abstract and concrete class for each products we want to produce.
+* In my [example](code/creational/abstract_factory), we have two different concrete class (Warrior and Mage). For simplicity are the same concrete class for the factories but it is possible to have a different Warrior and Mage for the different factory extending the same interface.
+* Two different concrete factories (Evil and Good) that produce Warriors and Mage.
 
 # Structural Design Patterns
 
